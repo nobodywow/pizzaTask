@@ -53,7 +53,7 @@ class App extends Component {
         }
         return (
             <div className="container padding">
-                <button className="btn" onClick={this.fetchData}>Load Party</button>
+                <button className={this.state.isLoading ? "btn loading" : "btn"} disabled={this.state.isLoading} onClick={this.fetchData}>Load Party</button>
                 {content}
             </div>
         )

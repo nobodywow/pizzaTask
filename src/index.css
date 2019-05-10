@@ -16,30 +16,29 @@ body {
 
 .container {
   display: grid;
-  grid-gap: 10%;
   justify-items: center;
 }
 
 .padding {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .vegan {
-  border-color: green;
+  background: rgb(20, 148, 20);
 }
 
 .meat {
-  border-color: rgb(138, 54, 54)
+  background: rgb(148, 93, 93);
 }
 
 .pizza {
   position: relative;
-  background: #fff;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border-style: solid;
-  border-width: 4px;
+  border-width: 2px;
+  border-color: black;
 }
 
 .diameter {
@@ -54,6 +53,7 @@ body {
   border-radius: 5px;
   border: none;
   padding: 15px 25px;
+  margin: 20px;
   font-size: 20px;  
   color: #fff;  
   background-color: #2ecc71;  
@@ -84,11 +84,15 @@ body {
   align-items: center;
 }
 
-.loading {
-  cursor: not-allowed;
+.table-header {
+  font-weight: bold;
 }
 
-.paid {
+.table-footer {
+  font-weight: bolder;
+}
+
+.loading {
   cursor: not-allowed;
 }
 

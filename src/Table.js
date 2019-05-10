@@ -6,9 +6,9 @@ const Table = (props) => {
     
     return (
         <div className="table-container">
-        <div className="table-item">Name</div>
-        <div className="table-item">Share to pay</div>
-        <div className="table-item">Pay</div>
+        <div className="table-item table-header">Name</div>
+        <div className="table-item table-header">Share to pay</div>
+        <div className="table-item table-header">Pay</div>
         {            
             props.guest.map((item) => 
                 <React.Fragment key={item.name}>
@@ -18,9 +18,9 @@ const Table = (props) => {
                 </React.Fragment>
             )
         }
-        <div className="table-item">Money to collect</div>
-        <div className="table-item">{`${props.priceLeft.toFixed(1)} BYN`}</div>
-        <div className="table-item"></div>
+        <div className="table-item table-footer">Money to collect</div>
+        <div className="table-item table-footer">{`${props.priceLeft.toFixed(1)} BYN`}</div>
+        <div className="table-item table-footer"></div>
         </div>
         
     );
